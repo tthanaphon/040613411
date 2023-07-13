@@ -1,0 +1,188 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600&display=swap');
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+
+nav{
+    
+    color:antiquewhite;
+    position: sticky;
+    top: 0;
+    height: 88px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #1C352D;
+    z-index: 1;
+}
+nav h1{
+    font-size: 40px;
+    margin-left: 40px;
+}
+section{
+   padding: 10%;
+}
+.home{
+    display: flex;
+    align-items: center;
+    height: 120vh;
+    background: url(image/herb.jpg) no-repeat ;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+    margin-bottom: 500px;
+    max-width: 1500px;
+}
+
+.home .content h1{
+    font-size: 40px;
+    color: rgb(187, 55, 55);
+}
+
+.home .content span{
+    font-size: 25px;
+    color: black;
+}
+
+
+.Herb{
+    justify-content: center;
+    min-height: 820vh;
+    max-height: 2470vh;
+    align-items: center;
+   
+}
+
+.Herb .content h1 {
+    text-align: left;
+    font-size: 30px;
+    color: #1C352D;
+    
+}
+.Herb .content h2{
+    margin-top: 160px;
+    font-size: 30px;
+    background-color:  #41571e  ;
+    color: aliceblue;
+    text-align: center;
+}
+
+.Herb .content p{
+    text-align: left;
+    font-size: 30px;
+}
+.Herb .content span{
+    text-align: left;
+    font-size: 30px;
+    color: red;
+}
+
+.Herb .card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+}
+
+.Herb .card{
+    flex: 0 0 300px;
+    height: 300px;
+    width: 300px;
+    margin-left: 20px;
+    margin-top: 200px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+}
+
+.Herb  .card .image img{
+    height: 300px;
+    width: 300px;
+    border-radius: 3px;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.Herb .card  .content{
+    height: 80px;
+    width: 300px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    background: rgb(81, 123, 50,.5);
+    color: aliceblue;
+    transition: .5s;
+    z-index: 0; 
+   
+}
+
+.Herb .card .content h1{
+    padding: 2%;
+    margin-top: auto;
+    font-size: 30px; 
+    text-align: center;
+} 
+.Herb .card .content p{
+    font-size: 20px; 
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
+} 
+.Herb  .card .content span{
+    font-weight: bold;
+    color: aliceblue;
+    font-size: 20px;
+} 
+
+.Herb .card:hover {
+    cursor: pointer;
+} 
+.Herb .card:hover .content{
+    height: 220px;
+    background:  #6F9940;
+}
+.Herb .card:hover p{
+    opacity: 1;
+    visibility: visible;
+    text-align: left;
+    margin: 10px;
+}
+
+.Herb .card:hover img{
+    transform: scale(1.1) rotate(-3deg);
+}
+
+.footer{
+    display: flex;
+    height: 300px;
+    width: 100%;
+    background-color: #41571e;
+    flex: 0 0 auto ;
+}
+
+.footer h1{
+    font-size: 40px;
+    margin-top: 50px;
+    margin-left: 70px;
+    color: antiquewhite;
+}
+.footer p{
+   font-size: 20px;
+   color: antiquewhite;
+   margin-left: auto;
+   padding-top: 6%;
+   padding-right: 40px;
+}
+.footer a{
+    font-size: 20px;
+    color: antiquewhite;
+    margin-top: 10px;
+}
+.footer ul{
+    font-size: 20px;
+    color: black;
+}
