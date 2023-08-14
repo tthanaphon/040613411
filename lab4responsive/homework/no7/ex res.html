@@ -1,0 +1,60 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<style>
+		.flex {
+			display: flex;
+		}
+		nav{
+			background-color: black;
+			color: white;
+			text-align: center;
+		}
+		section{
+			flex-direction: row;
+			background-color: gainsboro;
+		}
+		aside {
+			background-color: cornflowerblue;
+		}
+
+		@media screen and (min-width: 481px) {
+			.flex {
+				flex-direction:row;
+			}
+			nav{
+				flex-basis: 30%;
+			}
+			aside {
+				flex-basis: 33%;
+			}
+			section {
+				flex-basis: 67%;
+			}
+		}
+		
+		 @media screen and (max-width: 480px) {
+			.flex {
+				flex-direction: column;
+			}	
+			 section,
+ 			aside {
+    			flex-basis: 100%;
+			} 
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="flex">
+		<nav>
+			Menu1
+			<br>Menu2
+			<br>Menu3
+			<br>
+		</nav>
+		<section>In publishing, art, and communication, … as speech, writing or any of various arts".</section>
+		<aside>advertising<br>advertising<br>advertising<br></aside>
+	</div>
+</body>
+</html>

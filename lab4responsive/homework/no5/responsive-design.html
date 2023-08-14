@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <style>
+
+    body {
+      align-items: center;
+      background-color: lightgray;
+      margin: 10px 20px;
+    }
+    .botton {
+      border: 2px solid blue;
+      background: blue;
+      width: 150px;
+      height: 40px;
+      border-radius: 10px;
+      color: white;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: row;
+    }
+    a {
+      text-decoration: none;
+    }
+    .content {
+      background-color:lightgray;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+    }
+    .wrap {
+      justify-content: center;
+    }
+    @media screen and (min-width: 401px) {
+      .flexible {
+        padding: 20px;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+
+    @media screen and (max-width: 400px) {
+      .flexible {
+        padding: 20px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+
+<body>
+    <div class="flexible">
+        
+		<div class="product">
+            <img src="imgs/clock.jpg">
+        </div>
+
+        <div class="content">
+            Garmin Instinct, Rugged Outdoor Watch with GPS, 
+            Features GLONASS and Galileo, Heart Rate Monitoring and
+            3-axis Compass, Tundra<br><br>
+            <div class="wrap">
+                <a href="">
+                    <div class="botton">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Add to cart</div>
+                </a>
+            </div>
+		</div>
+
+    </div>
+
+</body>
+<script src="https://kit.fontawesome.com/55b5a69d60.js" crossorigin="anonymous"></script>
+</html>
