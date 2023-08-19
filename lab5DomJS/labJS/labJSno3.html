@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let student= [
+            {
+                fullname: 'นายตั้งใจ เรียนมาก',
+                age: 18, 
+                year: 1,
+                gpa: 3.40,
+                help: true
+            },
+            {
+                fullname: 'นายส่งงาน ตลอดมา',
+                age: 19,
+                year: 2,
+                gpa: 3.00,
+                help: false
+            },
+            {
+                fullname: 'นางสาวใส่ใจ ดีงาม',
+                age: 20,
+                year: 3,
+                gpa: 2.90,
+                help: true
+            },
+            {
+                fullname: 'นางสาวสวัสดี ยามเย็น',
+                age: 20,
+                year: 3,
+                gpa: 2.00,
+                help: false
+            },
+            {
+                fullname: 'นางสาวดีเด่น ดีงาม',
+                age: 20,
+                year: 3,
+                gpa: 2.00,
+                help: true
+            },
+            {
+                fullname: 'นางสาวลิซา แบล็กพิ้ง',
+                age: 19,
+                year: 2,
+                gpa: 2.90,
+                help: true
+            },
+            {
+                fullname: 'นางสาวดีน่า พิ้ง',
+                age: 18,
+                year: 1,
+                gpa: 3.70,
+                help: false
+            },
+        ];
+
+        let i = 0; 
+        let length = student.length;
+        
+        for (let year = 1; year <= 4; year++) {
+            console.log(`ชั้นปีที่ ${year}`);
+            let hasScholarship = false;
+            
+            for (let i = 0; i < student.length; i++) {
+                if (student[i].year === year && student[i].gpa > 3.20 )  {
+                    if (student[i].help) {
+                        console.log(`${student[i].fullname} เนื่องจากเกรดเฉลี่ยถึงเกณฑ์และยังช่วยงานภาควิชาด้วย`);
+                        hasScholarship = true;
+                    } else {
+                        console.log(`${student[i].fullname} เนื่องจากเกรดเฉลี่ยถึงเกณฑ์ถึงแม้ไม่ได้ช่วยงานภาควิชา`);
+                        hasScholarship = true;
+                    }
+                } 
+
+                else if(student[i].year === year && student[i].year >= 2 && student[i].gpa >= 2.75){
+                    if (student[i].help) {
+                        console.log(`${student[i].fullname} เนื่องจากเกรดเฉลี่ยถึงเกณฑ์และยังช่วยงานภาควิชาด้วย`);
+                        hasScholarship = true;
+                } 
+            }
+        }
+        if (!hasScholarship) {
+                console.log("ไม่มี");
+            }
+            
+}
+    </script>
+</body>
+</html>

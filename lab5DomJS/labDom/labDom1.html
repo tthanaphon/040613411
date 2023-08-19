@@ -1,0 +1,33 @@
+<html>
+<head>
+<script>
+function checkPassword() {
+    var Password1 = document.getElementById("pass1").value;
+    var Password2 = document.getElementById("pass2").value;
+    var errorMsg = document.getElementById("errormsg");
+
+    if (Password1 === Password2) {
+        errorMsg.textContent = "Correct";
+        errorMsg.style.color = "green";
+    } 
+    
+    else {
+        errorMsg.textContent = "Incorrect";
+        errorMsg.style.color = "red";
+    }
+      
+}
+</script>
+</head>
+<body>
+<h1>Register</h1>
+    Username: 
+    <input type="text" required><br>
+    Password: 
+    <input type="text" id="pass1" required><br>
+    Re-type Password: 
+    <input type="text" id="pass2" required ><br>
+    
+    <input type="submit" onclick="checkPassword()">
+    <div id="errormsg"></div>
+</body>

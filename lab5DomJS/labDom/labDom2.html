@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .green-text {
+    color: green;
+  }
+</style>
+</head>
+<body>
+  <h1>Register</h1>
+  <form>
+    Name: 
+    <input type="text" id="name" required 
+           oninput="handleInput('name')"><br>
+    Age: 
+    <input type="text" id="age" required 
+           oninput="handleInput('age')"><br>
+    Birthdate: 
+    <input type="text" id="birthdate" required 
+           oninput="handleInput('birthdate')"><br>
+  </form>
+  
+  <script>
+    function handleInput(inputId) {
+      var inputElement = document.getElementById(inputId);
+      
+      if (inputElement.value !== "") {
+        inputElement.classList.add('green-text');
+      } else {
+        inputElement.classList.remove('green-text');
+      }
+    }
+  </script>
+</body>
+</html>
